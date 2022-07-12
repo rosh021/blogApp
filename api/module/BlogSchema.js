@@ -9,8 +9,6 @@ const createSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true,
-    maxLength: [50, "Please Enter the description length less then 50"],
-    minLength: [10, "Please Enter the description length more then 10"],
   },
 
   like: {
@@ -20,8 +18,7 @@ const createSchema = new mongoose.Schema({
 
   image: {
     date: Buffer,
-    contentType: "image/png",
-    required: true,
+    contentType: String,
   },
 });
 

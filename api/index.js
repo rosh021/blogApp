@@ -3,6 +3,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 
+
 const app = express();
 const PORT = process.env.PORT || 8000;
 app.use(express.json());
@@ -11,7 +12,6 @@ app.use(cors());
 // database Connection
 import { databaseConnection } from "./dbConfig/dbConfig.js";
 databaseConnection();
-
 
 // storages for image
 

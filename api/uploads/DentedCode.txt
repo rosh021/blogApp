@@ -1,0 +1,4 @@
+bcryptjs
+multer
+jsonwebtoken 
+joi
